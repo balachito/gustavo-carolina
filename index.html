@@ -20,16 +20,10 @@
             --white: #ffffff;
             --glass-bg: rgba(17, 17, 17, 0.8);
             --glass-border: rgba(242, 0, 255, 1);
-            
-            /* variavel para o nome */
             --girlfriend-name: "Carolina";
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -40,45 +34,27 @@
             cursor: auto ;
         }
 
-        /* cursor dark */
         .custom-cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
+            position: fixed; width: 20px; height: 20px;
             background: radial-gradient(circle, var(--accent-purple), var(--deep-purple));
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
+            border-radius: 50%; pointer-events: none; z-index: 9999;
             transition: transform 0.1s ease;
             box-shadow: 0 0 20px var(--accent-purple);
             border: 2px solid var(--neon-red);
         }
 
         .cursor-trail {
-            position: fixed;
-            width: 6px;
-            height: 6px;
+            position: fixed; width: 6px; height: 6px;
             background: rgba(160, 32, 240, 0.8);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9998;
-        }
+            border-radius: 50%; pointer-events: none; z-index: 9998;
+}
 
         /* frufru vermelho */
         .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
 
         .particle {
-            position: absolute;
-            width: 3px;
-            height: 3px;
+            position: absolute; width: 3px; height: 3px;
             background: radial-gradient(circle, var(--accent-purple), transparent);
             border-radius: 50%;
             animation: float-particle 8s linear infinite;
@@ -93,11 +69,7 @@
 
         /* efeito de ondas */
         .wave-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: 
                 radial-gradient(circle at 20% 50%, rgba(157, 0, 255, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(122, 0, 255, 0.1) 0%, transparent 50%),
@@ -112,30 +84,17 @@
         }
 
         /* container principal */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            position: relative;
-            z-index: 10;
-        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; position: relative; z-index: 10; }
 
         /* header dark */
         .header {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
+            text-align: center; margin-bottom: 60px; position: relative;
             animation: slideDown 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
 
         .header::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: 4px;
+            content: ''; position: absolute; top: -20px; left: 50%;
+            transform: translateX(-50%); width: 200px; height: 4px;
             background: linear-gradient(90deg, var(--accent-purple), var(--gold), var(--accent-purple));
             border-radius: 2px;
             animation: glow-line 3s ease-in-out infinite alternate;
@@ -147,8 +106,7 @@
         }
 
         .header h1 {
-            font-size: 4.5rem;
-            font-weight: 800;
+            font-size: 4.5rem; font-weight: 800;
             background: linear-gradient(45deg, var(--accent-purple), var(--gold), var(--neon-red), var(--silver));
             background-size: 400% 400%;
             -webkit-background-clip: text;
@@ -171,9 +129,7 @@
         }
 
         .header p {
-            font-size: 1.4rem;
-            color: var(--silver);
-            font-weight: 300;
+            font-size: 1.4rem; color: var(--silver); font-weight: 300;
             letter-spacing: 1px;
             animation: pulse-text 3s ease-in-out infinite;
         }
@@ -260,12 +216,8 @@
         }
 
         .love-message {
-            font-size: 1.4rem;
-            line-height: 1.8;
-            color: var(--silver);
-            margin-bottom: 50px;
-            font-weight: 300;
-            letter-spacing: 0.5px;
+            font-size: 1.4rem; line-height: 1.8; color: var(--silver);
+            margin-bottom: 50px; font-weight: 300; letter-spacing: 0.5px;
             animation: message-glow 4s ease-in-out infinite alternate;
         }
 
@@ -280,12 +232,7 @@
             color: var(--white);
             border: none;
             padding: 25px 50px;
-            font-size: 1.4rem;
-            font-weight: 600;
-            border-radius: 60px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
+            font-size: 1.4rem; font-weight: 600; border-radius: 60px; cursor: pointer; position: relative; overflow: hidden;
             transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             margin: 40px 0;
             box-shadow: 
@@ -306,9 +253,7 @@
             transition: left 0.5s;
         }
 
-        .surprise-btn:hover::before {
-            left: 100%;
-        }
+        .surprise-btn:hover::before { left: 100%; }
 
         .surprise-btn:hover {
             transform: translateY(-5px) scale(1.05);
@@ -324,11 +269,8 @@
 
         /* galeria de fotos */
         .photo-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin: 60px 0;
-            perspective: 1000px;
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 15px; margin: 60px 0; perspective: 1000px;
         }
 
         .photo-frame {
@@ -503,20 +445,10 @@
         }
 
         /* footer dark */
-        .footer {
-            text-align: center;
-            padding: 60px 0;
-            color: var(--silver);
-            font-size: 1.3rem;
-            position: relative;
-        }
+        .footer { text-align: center; padding: 60px 0; color: var(--silver); font-size: 1.3rem; position: relative; }
 
         .footer::before {
-            content: '';
-            position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
+            content: ''; position: absolute; top: -30px; left: 50%; transform: translateX(-50%);
             width: 300px;
             height: 2px;
             background: linear-gradient(90deg, var(--accent-purple), var(--gold), var(--accent-purple));
@@ -544,60 +476,34 @@
             75% { transform: scale(1.2) rotate(3deg); }
         }
 
-        /* Efeitos de explosao */
+        /* efeitos de bumm 💣💗 */
         .heart-explosion {
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            font-size: 2rem;
-            animation: heart-explode 2s ease-out forwards;
+            position: fixed; pointer-events: none; z-index: 9999;
+            font-size: 2rem; animation: heart-explode 2s ease-out forwards;
         }
 
         @keyframes heart-explode {
-            0% { 
-                transform: scale(0) rotate(0deg); 
-                opacity: 1; 
-            }
-            50% { 
-                transform: scale(1.5) rotate(180deg); 
-                opacity: 1; 
-            }
-            100% { 
-                transform: scale(0.5) rotate(360deg); 
-                opacity: 0; 
-            }
+            0% { transform: scale(0) rotate(0deg);  opacity: 1; }
+            50% { transform: scale(1.5) rotate(180deg); opacity: 1; }
+            100% { transform: scale(0.5) rotate(360deg); opacity: 0; }
         }
 
         /* loading tema escuro */
         .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(135deg, var(--primary-black), var(--secondary-black));
-            z-index: 10000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            z-index: 10000; display: flex; align-items: center; justify-content: center;
             animation: fadeOut 2s ease-in-out 3s forwards;
         }
 
-        .loading-heart {
-            font-size: 4rem;
-            animation: loading-pulse 1s ease-in-out infinite;
-            color: var(--accent-purple);
-            filter: drop-shadow(0 0 20px var(--accent-purple));
-        }
+        .loading-heart { font-size: 4rem; animation: loading-pulse 1s ease-in-out infinite; color: var(--accent-purple); filter: drop-shadow(0 0 20px var(--accent-purple));}
 
         @keyframes loading-pulse {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.5) rotate(45deg); }
         }
 
-        @keyframes fadeOut {
-            to { opacity: 0; visibility: hidden; }
-        }
+        @keyframes fadeOut { to { opacity: 0; visibility: hidden; }}
 
         /* mobile */
         @media (max-width: 480px) {
@@ -689,64 +595,149 @@
             }
         }
 
-        /* animaçoes de entrada */
+        /* animacoes de entrada */
         @keyframes slideDown {
             from { opacity: 0; transform: translateY(-50px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); }}
+
+        /*milestone modal*/
+        .milestone-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(8px);
+            z-index: 99990; display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.5s ease;
         }
+
+        .milestone-overlay.active { opacity: 1; pointer-events: all; }
+
+        .milestone-modal {
+            background: linear-gradient(135deg, #0d0d0d, #1a0030, #0d0d0d);
+            border: 2px solid rgba(157,0,255,0.7);
+            border-radius: 30px; padding: 50px 40px;
+            max-width: 550px; width: 90%; text-align: center;
+            position: relative; overflow: hidden;
+            box-shadow: 0 0 80px rgba(157,0,255,0.4), 0 30px 60px rgba(0,0,0,0.8);
+            transform: scale(0.8) translateY(40px);
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .milestone-overlay.active .milestone-modal {
+            transform: scale(1) translateY(0);
+        }
+
+        .milestone-modal::before {
+            content: '';
+            position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(157,0,255,0.08), transparent);
+            animation: modal-shine 3s ease-in-out infinite;
+        }
+
+        @keyframes modal-shine { 0% { left: -100%; } 100% { left: 100%; } }
+
+        .milestone-badge {
+            font-size: 5rem; margin-bottom: 20px;
+            animation: badge-bounce 1s ease-in-out infinite alternate;
+            display: block;
+        }
+
+        @keyframes badge-bounce {
+            0% { transform: scale(1) rotate(-5deg); }
+            100% { transform: scale(1.15) rotate(5deg); }
+        }
+
+        .milestone-type {
+            font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent-purple); font-weight: 600; margin-bottom: 10px;
+        }
+
+        .milestone-title {
+            font-size: 2.5rem; font-weight: 800;
+            background: linear-gradient(45deg, #fff, #b069db, #9d00ff, #fff);
+            background-size: 300% 300%;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            animation: gradient-shift 3s ease infinite;
+            margin-bottom: 15px; line-height: 1.2;
+        }
+
+        .milestone-count {
+            font-size: 4rem; font-weight: 800;
+            background: linear-gradient(45deg, #9d00ff, #ff00ff, #ffd700);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            filter: drop-shadow(0 0 15px rgba(157,0,255,0.5));
+            margin-bottom: 20px;
+        }
+
+        .milestone-msg {
+            color: var(--silver); font-size: 1.15rem; line-height: 1.7;
+            margin-bottom: 30px; font-weight: 300;
+        }
+
+        .milestone-close {
+            background: linear-gradient(45deg, var(--accent-purple), var(--deep-purple));
+            border: none; color: white; padding: 15px 40px;
+            font-size: 1.1rem; font-weight: 600; border-radius: 50px; cursor: pointer;
+            border: 2px solid rgba(157,0,255,0.5);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(157,0,255,0.4);
+        }
+
+        .milestone-close:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 15px 35px rgba(157,0,255,0.6); }
+
+        .milestone-fireworks {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; overflow: hidden; border-radius: 30px;
+        }
+
+        .fw-particle {
+            position: absolute;
+            width: 6px; height: 6px; border-radius: 50%;
+            animation: fw-burst 1.5s ease-out forwards;
+        }
+
+        @keyframes fw-burst {
+            0% { transform: translate(0,0) scale(1); opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+        }
+
+        /* player spotify */
         .spotify-player{
-            position: relative;
-            background: #121212;
-            border: 1px solid #2a2a2a;
-            border-radius: 20px;
-            padding: 20px;
-            margin: 30px 0;
-            color: white;
+            position: relative; background: #121212;
+            border: 1px solid #2a2a2a; border-radius: 20px;
+            padding: 20px; margin: 30px 0; color: white;
             box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
-        .track-info{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+        .track-info{ display: flex; align-items: center; gap: 15px; }
 
         .cover {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            overflow: hidden;
+            width: 70px; height: 70px; border-radius: 50%; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
             border: 3px solid #9d00ff;
             box-shadow: 0 0 15px rgba(157,0,255,0.6);
         }
 
-        .title{
-            font-weight: bold;
-            font-size: 1.1rem;
+        .disc {
+            width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+            animation: spin 4s linear infinite;
+            animation-play-state: paused; /* começa parado */
         }
 
-        .artist{
-            font-size: 0.9rem;
-            color: #aaa;
-        }   
+        .disc img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%;}
 
-        .controls{
-            margin-top: 15px;
-        }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); }}
 
+        .title{ font-weight: bold; font-size: 1.1rem;}
+        .artist{ font-size: 0.9rem; color: #aaa; }   
+
+        .controls{ margin-top: 15px; }
         .controls button{
-            background: #1db954;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 50px;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
+            background: #1db954; border: none; padding: 10px 20px;
+            border-radius: 50px; color: white; cursor: pointer; font-weight: bold;
         }
         .cover {
             width: 70px;
@@ -765,43 +756,19 @@
             object-fit: cover;
             border-radius: 50%;
         }
-        .disc {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            overflow: hidden;
-            animation: spin 4s linear infinite;
-            animation-play-state: paused; /* começa parado */
-        }
+        
+        .progress-container{ margin-top:15px; }
+        #progressBar{ width:100%; cursor:pointer; accent-color:#9d00ff;}
 
-        .disc img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .progress-container{
-            margin-top:15px;
-        }
-        #progressBar{
-            width:100%;
-            cursor:pointer;
-            accent-color:#9d00ff;
-        }
+        .time-info{ display:flex; justify-content:space-between; margin-top:8px; color:#aaa; font-size:.9rem;}
 
-/* rotação estilo vinil */
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+        .lyrics-wrapper{ margin-top:20px; text-align:center; }
+        #prevLyric{ color:#777; font-size:.9rem; margin-bottom:8px; }
+        #currentLyric{ color:white; font-size:1.4rem; font-weight:600; text-shadow:0 0 15px rgba(157,0,255,.8); margin:10px 0; }
+        #nextLyric{ color:#777; font-size:.9rem; margin-top:8px;}
 
-        .relationship-counters{
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
+        
+        .relationship-counters{ display: flex; gap: 20px; justify-content: center; margin: 25px 0;flex-wrap: wrap; }
 
         .counter-card{
             background: rgba(255,255,255,0.05);
@@ -813,44 +780,58 @@
             box-shadow: 0 0 15px rgba(157,0,255,0.2);
         }
 
-        .counter-card h3{
-            color: #9d00ff;
-            margin-bottom: 10px;
+        .counter-card h3{ color: #9d00ff; margin-bottom: 10px; }
+        .counter-card p{ color: white; font-size: 1.1rem; font-weight: bold; }
+
+        .counter-card .milestone-hint {
+            font-size: 0.75rem; color: rgba(157,0,255,0.7);
+            margin-top: 6px; font-weight: 300; letter-spacing: 0.5px;
         }
 
-        .counter-card p{
-            color: white;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
         .page-btn {
             display: inline-block;
             background: linear-gradient(45deg, var(--accent-purple), var(--deep-purple));
-            color: var(--white);
-            text-decoration: none;
-            padding: 25px 50px;
-            font-size: 1.4rem;
-            font-weight: 600;
-            border-radius: 60px;
-            margin: 40px 0;
+            color: var(--white); text-decoration: none; padding: 25px 50px;
+            font-size: 1.4rem; font-weight: 600; border-radius: 60px; margin: 40px 0;
             border: 2px solid var(--neon-red);
             box-shadow: 0 15px 35px rgba(157, 0, 255, 0.4);
             transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             animation: btn-pulse 3s ease-in-out infinite;
         }
 
-        .page-btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(157, 0, 255, 0.6),
-                        0 0 30px var(--gold);
+        .page-btn:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 25px 50px rgba(157, 0, 255, 0.6), 0 0 30px var(--gold); }
+        
+        .voce-destaque{ display:inline-block; animation: voceLove 3s infinite ease-in-out; }
+
+        @keyframes voceLove{
+            0%,100%{ font-family:'Poppins',sans-serif; color:#fff; transform:scale(1); text-shadow: 0 0 10px #9d00ff, 0 0 20px #9d00ff; }
+            50%{ font-family:'Georgia',serif; color:#ffb3ff; transform:scale(1.3); text-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff; }
         }
-        .time-info{
-            display:flex;
-            justify-content:space-between;
-            margin-top:8px;
-            color:#aaa;
-            font-size:.9rem;
+
+        @media (max-width: 480px) {
+            .header h1 { font-size: 2.8rem; margin-bottom: 15px; }
+            .header p { font-size: 1.1rem; }
+            .love-card { padding: 30px 20px; margin: 30px 0; border-radius: 20px; }
+            .love-card h2 { font-size: 2.2rem; margin-bottom: 25px; }
+            .love-message { font-size: 1.1rem; margin-bottom: 30px; }
+            .surprise-btn { padding: 18px 35px; font-size: 1.2rem; }
+            .photo-gallery { grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 40px 0; }
+            .photo-frame { border-radius: 15px; padding: 6px; }
+            .photo-frame img { border-radius: 10px; }
+            .special-message { padding: 30px 20px; border-radius: 20px; }
+            .special-message h3 { font-size: 2rem; }
+            .special-message p { font-size: 1.1rem; }
+            .milestone-modal { padding: 35px 20px; }
+            .milestone-title { font-size: 1.8rem; }
+            .milestone-count { font-size: 3rem; }
         }
+
+        @media (min-width: 1025px) {
+            .photo-gallery { grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        }
+
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
 
         .lyrics-container{
             margin-top:20px;
@@ -869,69 +850,31 @@
             transition:.4s;
             text-shadow:0 0 15px rgba(157,0,255,.7);
         }
-        .lyrics-wrapper{
-            margin-top:20px;
-            text-align:center;
-        }
-        #prevLyric{
-            color:#777;
-            font-size:.9rem;
-            margin-bottom:8px;
-        }
-        #currentLyric{
-            color:white;
-            font-size:1.4rem;
-            font-weight:600;
-            text-shadow:0 0 15px rgba(157,0,255,.8);
-            margin:10px 0;
-        }
-        #nextLyric{
-            color:#777;
-            font-size:.9rem;
-            margin-top:8px;
-        }
-        .voce-destaque{
-            display:inline-block;
-            animation: voceLove 3s infinite ease-in-out;
-        }
 
-        @keyframes voceLove{
-            0%,100%{
-            font-family:'Poppins',sans-serif;
-            color:#fff;
-            transform:scale(1);
-            text-shadow:
-                0 0 10px #9d00ff,
-                0 0 20px #9d00ff;
-        }
-
-        50%{
-            font-family:'Georgia',serif;
-            color:#ffb3ff;
-            transform:scale(1.3);
-            text-shadow:
-                0 0 15px #ff00ff,
-                0 0 30px #ff00ff,
-                0 0 50px #ff00ff;
-        }
-    }
     </style>
 </head>
 <body>
     <!-- overlay de loading -->
-    <div class="loading-overlay">
-        <div class="loading-heart">❤️</div>
-    </div>
-
+    <div class="loading-overlay"><div class="loading-heart">❤️</div></div>
     <!-- cursor personalizado -->
     <div class="custom-cursor"></div>
-
     <!-- frufru de fundo -->
     <div class="particles"></div>
-    
     <!-- efeito de ondas -->
     <div class="wave-bg"></div>
-    
+
+    <!-- MILESTONE MODAL -->
+    <div class="milestone-overlay" id="milestoneOverlay">
+        <div class="milestone-modal" id="milestoneModal">
+            <div class="milestone-fireworks" id="milestoneFireworks"></div>
+            <span class="milestone-badge" id="milestoneBadge">💜</span>
+            <div class="milestone-type" id="milestoneType">Namoro</div>
+            <div class="milestone-title" id="milestoneTitle">Surpresa!</div>
+            <div class="milestone-count" id="milestoneCount">1 Mês</div>
+            <p class="milestone-msg" id="milestoneMsg">Mensagem especial aqui</p>
+            <button class="milestone-close" onclick="closeMilestone()">💖 Fechar com amor</button>
+        </div>
+    </div>
 
     <div class="container">
         <header class="header">
@@ -957,11 +900,11 @@
                     <source src="euphoria.mp3" type="audio/mp3">
                 </audio>
 
-        <div class="lyrics-wrapper">
-            <div id="prevLyric"></div>
-            <div id="currentLyric"></div>
-            <div id="nextLyric"></div>
-        </div>
+                <div class="lyrics-wrapper">
+                    <div id="prevLyric"></div>
+                    <div id="currentLyric"></div>
+                    <div id="nextLyric"></div>
+                </div>
 
                 <div class="controls">
                     <button id="musicBtn" aria-label="Reprodutor musica">▶ Play</button>
@@ -976,18 +919,18 @@
                 </div>
 
                 <div class="relationship-counters">
-                    <div class="counter-card">
+                    <div class="counter-card" onclick="checkLoveMilestone()" title="Clique para ver a surpresa do mês!">
                         <h3>💕 Nosso Amor</h3>
                         <p id="loveCounter"></p>
                     </div>
-                    <div class="counter-card">
+                    <div class="counter-card" onclick="checkBabyMilestone()" title="Clique para ver a surpresa do mês!">
                         <h3>🐣 Nosso Baby</h3>
                         <p id="pregnancyCounter"></p>
                     </div>
                 </div>
-            </div>
+                </div>
 
-            <h2>Se existe alma gemea...é você <span class="heart">💌</span></h2>
+            <h2>Se existe alma gemea...é você <span class="heart" style="-webkit-text-fill-color: initial; background: none;">💌</span></h2>
 
             <div class="love-message">
                 <p> E depois de tudo isso... de todas as historias de todos os caminhos, minha alma encontrou a sua. E desde então, tudo em mim tem sido mais leve, mais bonito... do jeito que você é ;D</p>
@@ -1033,6 +976,7 @@
                 <img src="img/6.jpg" alt="Para sempre" onerror="this.style.display='none'; this.parentNode.innerHTML='🥰<br><small>Foto 6</small>';">
             </div>
         </section>
+
         <div style="text-align: center; margin: 40px 0;">
             <div style="
                 width: 300px;
@@ -1040,8 +984,8 @@
                 background: linear-gradient(90deg, var(--accent-purple), var(--gold), var(--accent-purple));
                 margin: 0 auto 30px auto;
                 border-radius: 1px;
-                animation: footer-line 3s ease-in-out infinite alternate;
-            "></div>
+                animation: footer-line 3s ease-in-out infinite alternate;">
+            </div>
 
         <div style="text-align: center; margin: 40px 0;">
             <a href="https://balachito.github.io/nosso_amor_doce-ep0-onde_tudo_comecou" class="page-btn">
@@ -1058,28 +1002,215 @@
     </div>
 
     <script>
-        document.querySelectorAll('.girlfriend-name')
-            .forEach(el => el.textContent = 'Carolina');
+        document.querySelectorAll('.girlfriend-name').forEach(el => el.textContent = 'Carolina');
+        
+        // inicio namoro
+    const namoroInicio = new Date("2025-12-19");
+
+    // inicio gravidez
+    const gravidezInicio = new Date("2026-01-29");
+
+        // === CONTADOR ===
+        function calcDiff(dataInicio) {
+            const agora = new Date();
+            let anos  = agora.getFullYear() - dataInicio.getFullYear();
+            let meses = agora.getMonth()    - dataInicio.getMonth();
+            let dias  = agora.getDate()     - dataInicio.getDate();
+            if (dias  < 0) { meses--; dias += new Date(agora.getFullYear(), agora.getMonth(), 0).getDate(); }
+            if (meses < 0) { anos--;  meses += 12; }
+            return { anos, meses, dias };
+        }
+
+        function totalMeses(dataInicio) {
+            const d = calcDiff(dataInicio);
+            return d.anos * 12 + d.meses;
+        }
+
+        function atualizarContadores() {
+            const lc = document.getElementById("loveCounter");
+            const pc = document.getElementById("pregnancyCounter");
+            const dl = calcDiff(namoroInicio);
+            const dp = calcDiff(gravidezInicio);
+            lc.innerHTML = `${dl.anos} anos, ${dl.meses} meses e ${dl.dias} dias juntos`;
+            pc.innerHTML = `${dp.anos} anos, ${dp.meses} meses e ${dp.dias} dias de gravidez`;
+
+            // hints clicáveis
+            const lm = totalMeses(namoroInicio);
+            const pm = totalMeses(gravidezInicio);
+        }
+
+        atualizarContadores();
+        setInterval(atualizarContadores, 60000);
+
+        // === SISTEMA DE MILESTONES ===
+
+        // Mensagens para cada mês de namoro (índice = nº do mês)
+        const loveMensagensMes = {
+            1:  { badge:"🌸", msg:"Um mês desde que tudo começou... cada dia com você é um presente que eu nunca esperava merecer. Obrigada por existir na minha vida, Carol. 💜" },
+            2:  { badge:"💞", msg:"Dois meses de você — e eu já não consigo imaginar como era antes. Você virou o meu ritmo favorito, sabe? 🎵" },
+            3:  { badge:"🌹", msg:"Três meses! Um trimestre inteiro amando você. E cada dia parece o primeiro e o favorito ao mesmo tempo. 💗" },
+            4:  { badge:"🦋", msg:"Quatro meses, quatro mil sorrisos seus que ficaram guardados aqui comigo. Você é demais pra caber em palavras. 🥺" },
+            5:  { badge:"✨", msg:"Cinco meses de amor — e eu ainda fico com frio na barriga toda vez que você aparece. Isso não vai mudar nunca. 💜" },
+            6:  { badge:"🎉", msg:"Seis meses! MEIO ANO DE VOCÊ! Minha pessoa favorita do universo inteiro. Valeu cada segundo, Carol. 🥳" },
+            7:  { badge:"🌙", msg:"Sete meses... você é o tipo de coisa boa que eu nunca soube pedir, mas a vida me deu assim mesmo. Obrigada. 🌙" },
+            8:  { badge:"💎", msg:"Oito meses de uma história que eu escolheria de novo em cada versão da minha vida. Você é tudo, Carol. 💎" },
+            9:  { badge:"🐣", msg:"Nove meses — e já temos o nosso bebê crescendo junto com esse amor! Que fase incrível de viver ao seu lado. 🐣" },
+            10: { badge:"🔟💜", msg:"Dez meses! Dois dígitos de amor real, bonito e verdadeiro. Cada um valeu cada momento contigo. 💜" },
+            11: { badge:"🌟", msg:"Onze meses... quase um ano inteiro. Você virou minha parte favorita de cada dia. Mal posso esperar pelo próximo. 🌟" },
+            12: { badge:"🎊", msg:"UM ANO COMPLETO! 365 dias escolhendo você. E escolheria de novo, amanhã, e sempre. Feliz aniversário, Carol. 🎊💜" },
+        };
+
+        // Mensagens especiais para aniversários de anos
+        const loveMensagensAno = {
+            1: { badge:"🏆💜", msg:"UM ANO INTEIRO de você! De nós! Você é a melhor coisa que aconteceu na minha vida, Carol. Obrigada por cada dia, cada abraço, cada história. Te amo demais. 🥂💜" },
+            2: { badge:"💍✨", msg:"DOIS ANOS! Nossa história já tem dois capítulos completos e eu já não quero mais parar de escrever. Cada ano com você é o melhor da minha vida. 💍" },
+        };
+
+        // Mensagens para cada mês de gravidez
+        const babyMensagensMes = {
+            1:  { badge:"🌱", msg:"O primeiro mês do nosso bebê! Uma vida nova que nasceu do nosso amor. Você é a mamãe mais corajosa e linda que eu conheço. 🌱💜" },
+            2:  { badge:"💛", msg:"Dois meses do nosso baby! Ele já tá crescendo com todo o amor que a gente tem pra dar. Você tá arrasando como mamãe, Carol. 💛" },
+            3:  { badge:"🍃", msg:"Três meses! Um trimestre inteiro do nosso bebê a bordo. Que momento lindo de viver ao seu lado, Carol. Você é incrível. 🍃" },
+            4:  { badge:"🌼", msg:"Quatro meses! Nosso bebê já tá ficando grandinho... e cada dia você fica mais linda como mamãe. Sério. 🌼" },
+            5:  { badge:"⭐", msg:"Cinco meses de gravidez! Estamos na metade dessa jornada incrível. Orgulho imensurável de você, Carol. ⭐💜" },
+            6:  { badge:"🌈", msg:"Seis meses! O nosso bebê já tá quase chegando e mal posso esperar pra ver você com ele no colo. 🌈" },
+            7:  { badge:"🕊️", msg:"Sete meses! Você tá no reta final, Carol. Tão perto de conhecer quem a gente criou juntos. Estou do seu lado sempre. 🕊️" },
+            8:  { badge:"🌺", msg:"Oito meses! O nosso baby tá quase aqui. Cada dia que passa você me impressiona mais com sua força. 🌺💜" },
+            9:  { badge:"👶", msg:"NOVE MESES! É o tempo de uma gravidez completa, Carol. Você foi incrível durante toda essa jornada. O nosso bebê chegou num momento perfeito. 👶🎉" },
+        };
+
+        const babyMensagensAno = {
+            1: { badge:"🎂👶", msg:"UM ANO DO NOSSO BEBÊ! Que ano foi esse, Carol... você como mamãe é a coisa mais linda que eu já vi na vida. Obrigada por ser tão incrível. 🎂" },
+        };
+
+        function getMilestoneDados(dataInicio, mensagensMes, mensagensAno) {
+            const d = calcDiff(dataInicio);
+            const mesesTotal = totalMeses(dataInicio);
+
+            // Prioridade: aniversário de ano (dia exato)
+            const hoje = new Date();
+            const ehDiaAniversario = hoje.getDate() === dataInicio.getDate() && hoje.getMonth() === dataInicio.getMonth();
+
+            if (d.anos > 0 && ehDiaAniversario && d.meses === 0 && d.dias === 0) {
+                const dados = mensagensAno[d.anos] || { badge:"🎊", msg:`${d.anos} anos juntos! Cada ano é melhor que o anterior. 💜` };
+                return { ...dados, titulo: `${d.anos} ${d.anos === 1 ? 'Ano' : 'Anos'} Completos!`, isAno: true };
+            }
+
+            // Aniversário mensal (dia exato do mês)
+            if (d.dias === 0 && mesesTotal > 0) {
+                const msgIdx = (mesesTotal % 12) === 0 && d.meses === 0 ? 12 : (mesesTotal % 12) || 12;
+                const dados = mensagensMes[msgIdx] || { badge:"💜", msg:`Mais um mês lindo ao seu lado! Mês ${mesesTotal}. 💜` };
+                return { ...dados, titulo: `${mesesTotal} ${mesesTotal === 1 ? 'Mês' : 'Meses'}!`, isAno: false };
+            }
+
+            // Não é dia de aniversário — mostra o mês atual mesmo assim
+            const msgIdx = (mesesTotal % 12) === 0 && d.meses === 0 ? 12 : (mesesTotal % 12) || 12;
+            const dados = mensagensMes[msgIdx] || { badge:"💜", msg:`Mês ${mesesTotal} e contando... você é tudo, Carol. 💜` };
+            return { ...dados, titulo: `Mês ${mesesTotal}`, isAno: false };
+        }
+
+        function abrirMilestone({ badge, titulo, msg, isAno }, tipo, countLabel) {
+            document.getElementById("milestoneBadge").textContent = badge;
+            document.getElementById("milestoneType").textContent  = tipo;
+            document.getElementById("milestoneTitle").textContent = titulo;
+            document.getElementById("milestoneCount").textContent = countLabel;
+            document.getElementById("milestoneMsg").textContent   = msg;
+
+            const overlay = document.getElementById("milestoneOverlay");
+            overlay.classList.add("active");
+            // Dispara fogos
+            dispararFogos(isAno);
+
+            // Explosão de corações
+            createHeartExplosion();
+
+            // Vibração
+            if (navigator.vibrate) {
+                navigator.vibrate(isAno ? [300,100,300,100,500] : [200,100,200]);
+            }
+        }
+
+        function closeMilestone() {
+            document.getElementById("milestoneOverlay").classList.remove("active");
+        }
+
+        document.getElementById("milestoneOverlay").addEventListener("click", function(e) {
+            if (e.target === this) closeMilestone();
+        });
+
+        function dispararFogos(muitosFogos = false) {
+            const container = document.getElementById("milestoneFireworks");
+            container.innerHTML = "";
+            const cores = ["#9d00ff","#ff00ff","#ffd700","#ff0066","#00ffcc","#ffffff"];
+            const qtd = muitosFogos ? 40 : 20;
+            for (let i = 0; i < qtd; i++) {
+                setTimeout(() => {
+                    const p = document.createElement("div");
+                    p.className = "fw-particle";
+                    const cor = cores[Math.floor(Math.random() * cores.length)];
+                    const tx  = (Math.random() - 0.5) * 300 + "px";
+                    const ty  = (Math.random() - 0.5) * 300 + "px";
+                    p.style.cssText = `
+                        background:${cor};
+                        left:50%; top:50%;
+                        --tx:${tx}; --ty:${ty};
+                        box-shadow:0 0 6px ${cor};
+                        animation-delay:${Math.random() * 0.3}s;
+                        animation-duration:${Math.random() * 0.8 + 0.8}s;
+                    `;
+                    container.appendChild(p);
+                    setTimeout(() => p.remove(), 2000);
+                }, i * 30);
+            }
+        }
+
+        function checkLoveMilestone() {
+            const dados = getMilestoneDados(namoroInicio, loveMensagensMes, loveMensagensAno);
+            const d = calcDiff(namoroInicio);
+            const countLabel = d.anos > 0
+                ? `${d.anos} ano${d.anos > 1 ? 's' : ''} e ${d.meses} mes${d.meses !== 1 ? 'es' : ''}`
+                : `${totalMeses(namoroInicio)} meses`;
+            abrirMilestone(dados, "💕 Nosso Amor", countLabel);
+        }
+
+        function checkBabyMilestone() {
+            const dados = getMilestoneDados(gravidezInicio, babyMensagensMes, babyMensagensAno);
+            const d = calcDiff(gravidezInicio);
+            const countLabel = d.anos > 0
+                ? `${d.anos} ano${d.anos > 1 ? 's' : ''} e ${d.meses} mes${d.meses !== 1 ? 'es' : ''}`
+                : `${totalMeses(gravidezInicio)} meses`;
+            abrirMilestone(dados, "🐣 Nosso Baby", countLabel);
+        }
+
+        // Auto-abre no carregamento se for dia de aniversário
+        window.addEventListener("load", () => {
+            const hoje = new Date();
+            const diaAnivNamoro   = hoje.getDate() === namoroInicio.getDate()   && hoje.getMonth() === namoroInicio.getMonth();
+            const diaAnivGravidez = hoje.getDate() === gravidezInicio.getDate() && hoje.getMonth() === gravidezInicio.getMonth();
+
+            if (diaAnivNamoro) {
+                setTimeout(() => checkLoveMilestone(), 4500);
+            } else if (diaAnivGravidez) {
+                setTimeout(() => checkBabyMilestone(), 4500);
+            }
+        });
+
+
         // cursor personalizado
         let cursor = document.querySelector('.custom-cursor');
-        
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.clientX - 10 + 'px';
-            cursor.style.top = e.clientY - 10 + 'px';
-            
-            // criar trilha do cursor
+            cursor.style.top  = e.clientY - 10 + 'px';
             if (Math.random() > 0.8) {
                 let trail = document.createElement('div');
                 trail.className = 'cursor-trail';
                 trail.style.left = e.clientX - 3 + 'px';
-                trail.style.top = e.clientY - 3 + 'px';
+                trail.style.top  = e.clientY - 3 + 'px';
                 document.body.appendChild(trail);
-                
                 setTimeout(() => trail.remove(), 1000);
             }
         });
-
-        // frufru vermelho
+        // frufru
         function createParticle() {
             if (document.querySelectorAll('.particle').length >= 40) return;
             const particle = document.createElement('div');
@@ -1113,6 +1244,20 @@
             
             // NOVA FUNÇÃO: Animação épica "TE AMO"
             createTeAmoAnimation();
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    const miniTeAmo = document.createElement('div');
+                    miniTeAmo.innerHTML = '💖 TE AMO';
+                    miniTeAmo.style.cssText = `position:fixed;left:${Math.random()*100}%;top:-50px;font-size:1.2rem;color:#ff0040;z-index:9997;pointer-events:none;animation:te-amo-rain ${Math.random()*3+2}s linear forwards;`;
+                    document.body.appendChild(miniTeAmo);
+                    setTimeout(() => miniTeAmo.remove(), 5000);
+                }, i * 150);
+            }
+
+            const pulseOverlay = document.createElement('div');
+            pulseOverlay.style.cssText = `position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle,rgba(157,0,255,0.1),transparent);z-index:9996;pointer-events:none;animation:love-pulse 2s ease-in-out;`;
+            document.body.appendChild(pulseOverlay);
+            setTimeout(() => pulseOverlay.remove(), 2000);
             
             // Vibração
             if (navigator.vibrate) {
@@ -1485,7 +1630,6 @@
                     transform: translate(-50%, -50%) scale(0) rotate(360deg); 
                 }
             }
-            
             @keyframes ripple-effect {
                 0% { 
                     transform: scale(0); 
@@ -1496,7 +1640,17 @@
                     opacity: 0; 
                 }
             }
-            
+            @keyframes te-amo-rain {
+                0%{opacity:0;transform:translateY(-50px) rotate(0deg) scale(0.8)}
+                10%{opacity:1;transform:translateY(0px) rotate(10deg) scale(1)}
+                90%{opacity:1;transform:translateY(calc(100vh - 100px)) rotate(-10deg) scale(0.9)}
+                100%{opacity:0;transform:translateY(100vh) rotate(0deg) scale(0.5)}
+            }
+            @keyframes love-pulse {
+                0%{opacity:0;transform:scale(0.8)}
+                50%{opacity:1;transform:scale(1.2)}
+                100%{opacity:0;transform:scale(1.5)}
+            }
             @keyframes notification-slide {
                 0% { 
                     transform: translateX(100%); 
@@ -1511,12 +1665,10 @@
                     opacity: 0; 
                 }
             }
-            
             @keyframes sound-wave {
                 0% { height: 10px; }
                 100% { height: 50px; }
             }
-            
             @keyframes te-amo-main {
                 0% { 
                     opacity: 0; 
@@ -1546,7 +1698,6 @@
                     background-position: 100% 50%;
                 }
             }
-            
             @keyframes te-amo-float {
                 0% { 
                     opacity: 0; 
@@ -1569,7 +1720,6 @@
                     transform: scale(0.5) rotate(0deg) translateY(-60px); 
                 }
             }
-            
             @keyframes te-amo-rain {
                 0% { 
                     opacity: 0; 
@@ -1588,7 +1738,6 @@
                     transform: translateY(100vh) rotate(0deg) scale(0.5); 
                 }
             }
-            
             @keyframes love-pulse {
                 0% { 
                     opacity: 0; 
@@ -1603,7 +1752,6 @@
                     transform: scale(1.5); 
                 }
             }
-            
             .animate-in {
                 animation: slideUp 0.8s ease-out forwards;
             }
@@ -1656,56 +1804,7 @@
             disc.style.animationPlayState = "paused";
         }
     }
-    // inicio namoro
-    const namoroInicio = new Date("2025-12-19");
 
-    // inicio gravidez
-    const gravidezInicio = new Date("2026-01-29");
-
-    function atualizarContadores() {
-        const agora = new Date();
-
-        atualizarTempo(
-            namoroInicio,
-            document.getElementById("loveCounter"),
-            "juntos"
-        );
-
-        atualizarTempo(
-            gravidezInicio,
-            document.getElementById("pregnancyCounter"),
-            "de gravidez"
-        );
-    }
-
-    function atualizarTempo(dataInicio, elemento, textoFinal) {
-        const agora = new Date();
-
-        let anos = agora.getFullYear() - dataInicio.getFullYear();
-        let meses = agora.getMonth() - dataInicio.getMonth();
-        let dias = agora.getDate() - dataInicio.getDate();
-
-        if (dias < 0) {
-            meses--;
-            const ultimoMes = new Date(
-                agora.getFullYear(),
-                agora.getMonth(),
-                0
-            );
-            dias += ultimoMes.getDate();
-        }
-
-        if (meses < 0) {
-            anos--;
-            meses += 12;
-        }
-
-        elemento.innerHTML =
-            `${anos} anos, ${meses} meses e ${dias} dias ${textoFinal}`;
-    }
-
-    atualizarContadores();
-    setInterval(atualizarContadores, 60000);
 
     function formatTime(seconds){
         const min = Math.floor(seconds / 60);
